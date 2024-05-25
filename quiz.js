@@ -1,6 +1,6 @@
 const quiz = [
     {
-        question: 'What year did Friends premiere?',
+        question: 'What year did the show premiere?',
         answers: [
             { text: '1990', correct: false},
             { text: '1994', correct: true},
@@ -9,7 +9,7 @@ const quiz = [
         ] 
     },
     {
-        question: 'What year did the final season of Friends air?',
+        question: 'What year did the final season of the show air?',
         answers: [
             { text: '1999', correct: false},
             { text: '2000', correct: false},
@@ -18,7 +18,7 @@ const quiz = [
         ] 
     },
     {
-        question: 'How many seasons of Friends aired?',
+        question: 'How many seasons of the show aired?',
         answers: [
             { text: '3', correct: false},
             { text: '8', correct: false},
@@ -81,7 +81,16 @@ const quiz = [
         ] 
     },
     {
-        question: 'What was the name of the barista at Central Perk that was in love with Rachel?',
+        question: 'What was the name of the coffee shop that the group frequented?',
+        answers: [
+            { text: `Central Caf&#233;`, correct: false},
+            { text: `The Village Caf&#233;`, correct: false},
+            { text: 'Central Perk', correct: true},
+            { text: 'The Village Perk', correct: false},
+        ] 
+    },
+    {
+        question: 'What is the name of the barista at Central Perk that loves Rachel?',
         answers: [
             { text: 'Mark', correct: false},
             { text: 'Tag', correct: false},
@@ -99,7 +108,7 @@ const quiz = [
         ] 
     },
     {
-        question: 'What was the name of Phoebe\'s identical twin sister?',
+        question: 'What is the name of Phoebe\'s identical twin sister?',
         answers: [
             { text: 'Pamela', correct: false},
             { text: 'Rebecca', correct: false},
@@ -144,7 +153,7 @@ const quiz = [
         ]
     },
     {
-        question: 'Which of the friends dated Janice... many times?',
+        question: 'Which of the friends dates Janice many times?',
         answers: [
             { text: 'Ross', correct: false},
             { text: 'Chandler', correct: true},
@@ -153,7 +162,7 @@ const quiz = [
         ]
     },
     {
-        question: 'Which of the friends dated Janice just once?',
+        question: 'Which of the friends dates Janice just once?',
         answers: [
             { text: 'Ross', correct: true},
             { text: 'Chandler', correct: false},
@@ -162,25 +171,7 @@ const quiz = [
         ]
     },
     {
-        question: 'Who guest-starred as Dr. Richard Burke--Monica\'s father\'s best friend and later, Monica\'s boyfriend?',
-        answers: [
-            { text: 'Tom Hanks', correct: false},
-            { text: 'Tom Cruise', correct: false},
-            { text: 'Tom Sellick', correct: true},
-            { text: 'Tom Hiddleston', correct: false},
-        ]
-    },
-    {
-        question: 'Who guest-starred as Will--an old high school friend of her and Ross? Hint: He co-founded the "I Hate Rachel" club with Ross.',
-        answers: [
-            { text: 'Brad Pitt', correct: true},
-            { text: 'Russell Crowe', correct: false},
-            { text: 'Chris Evans', correct: false},
-            { text: 'James McAvoy', correct: false},
-        ]
-    },
-    {
-        question: 'What was the name of Chandler\'s temporary roommate that moved in when Joey moved out? Hint: He accused Chandler of sleeping with his ex-girlfriend, Tilly, and killing his pet fish.',
+        question: 'What is the name of Chandler\'s temporary roommate that moves in when Joey moves out? Hint: He accused Chandler of sleeping with his ex-girlfriend, Tilly, and killing his pet fish.',
         answers: [
             { text: 'Bobby', correct: false},
             { text: 'Eddie', correct: true},
@@ -193,12 +184,12 @@ const quiz = [
         answers: [
             { text: 'Dinosaurs', correct: false},
             { text: 'Math', correct: false},
-            { text: 'Palientology', correct: true},
+            { text: 'Paleontology', correct: true},
             { text: 'Accounting', correct: false},        
         ]
     },
     {
-        question: 'Who officiated Monica and Chandler\'s wedding?',
+        question: 'Who officiates Monica and Chandler\'s wedding?',
         answers: [
             { text: 'Joey', correct: true},
             { text: 'Chandler', correct: false},
@@ -207,12 +198,120 @@ const quiz = [
         ]
     },
     {
-        question: 'Who guest-starred in a whopping 17 episodes as Mike Hannigan, Phoebe\'s boyfriend and (eventually) husband?',
+        question: 'What is the name of Phoebe\'s father, brother, and nephew?',
+        answers: [
+            { text: 'Fred, Fred Jr., and Fred Jr. Jr.', correct: false},
+            { text: 'Frank, Frank Jr., and Frank Jr. Jr.', correct: true},
+            { text: 'Francis, Francis Jr., and Francis Jr. Jr.', correct: false},
+            { text: 'Fabio, Fabio Jr., and Fabio Jr. Jr.', correct: false},        
+        ]
+    },
+    {
+        question: 'Who guest-starred as Dr. Richard Burke, a close friend of Monica\'s father that she later dates?',
+        answers: [
+            { text: 'Tom Hanks', correct: false},
+            { text: 'Tom Cruise', correct: false},
+            { text: 'Tom Sellick', correct: true},
+            { text: 'Tom Hiddleston', correct: false},
+        ]
+    },
+    {
+        question: 'Who guest-starred as Jill, Rachel\'s sister that ends up dating Ross?',
+        answers: [
+            { text: 'Reese Witherspoon', correct: true},
+            { text: 'Margot Robbie', correct: false},
+            { text: 'Scarlett Johannsen', correct: false},
+            { text: 'Cameron Diaz', correct: false},
+        ]
+    },
+    {
+        question: 'Who guest-starred as Amy, Rachel\'s sister that gets mad when Ross and Rachel won\'t agree to leave her their baby if they die?',
+        answers: [
+            { text: 'Kate Winslet', correct: false},
+            { text: 'Amy Adams', correct: false},
+            { text: 'Christina Applegate', correct: true},
+            { text: 'Drew Barrymore', correct: false},
+        ]
+    },
+    {
+        question: 'Who guest-starred as Richard Crosby, a famous co-star of Joey that has a spitting problem?',
+        answers: [
+            { text: 'Gary Oldman', correct: true},
+            { text: 'Alan Rickman', correct: false},
+            { text: 'Kevin Costner', correct: false},
+            { text: 'Billy Bob Thornton', correct: false},
+        ]
+    },
+    {
+        question: 'Who guest-starred as Susie Moss--AKA Susie Underpants--a grade school classmate of Chandler that gets major revenge for a bad prank he pulled at a school assembly?',
+        answers: [
+            { text: 'Jennifer Garner', correct: false},
+            { text: 'Hilary Swank', correct: false},
+            { text: 'Julia Roberts', correct: true},
+            { text: 'Elizabeth Banks', correct: false},
+        ]
+    },
+    {
+        question: 'Who guest-starred as the stripper that is hired at the last minute for Phoebe\'s bachelorette party?',
+        answers: [
+            { text: 'Dustin Hoffman', correct: false},
+            { text: 'Dave Franco', correct: false},
+            { text: 'John Stamos', correct: false},
+            { text: 'Danny Devito', correct: true},
+        ]
+    },
+    {
+        question: 'Who guest-starred in a whopping 17 episodes as Mike Hannigan, Phoebe\'s boyfriend that she eventually marries?',
         answers: [
             { text: 'Paul Walker', correct: false},
             { text: 'Paul Rudd', correct: true},
             { text: 'Paul Dano', correct: false},
             { text: 'Paul Giamatti', correct: false},        
+        ]
+    },
+    {
+        question: 'Who guest-starred as Paul Stevens, the father of Ross\'s girlfriend Elizabeth that Rachel dates?',
+        answers: [
+            { text: 'Harrison Ford', correct: false},
+            { text: 'Bruce Willis', correct: true},
+            { text: 'Sean Connery', correct: false},
+            { text: 'Nicolas Cage', correct: false},        
+        ]
+    },
+    {
+        question: 'Who guest-starred as Ryan, Phoebe\'s submarine man who purposely exposes himself to chicken pox to see her?',
+        answers: [
+            { text: 'Kevin Costner', correct: false},
+            { text: 'Charlie Sheen', correct: true},
+            { text: 'Robert Downey, Jr.', correct: false},
+            { text: 'Mel Gibson', correct: false},        
+        ]
+    },
+    {
+        question: 'Who guest-starred as Charlie, the brilliant paleontologist that Ross and Joey both date?',
+        answers: [
+            { text: 'Aisha Tyler', correct: true},
+            { text: 'Angella Bassett', correct: false},
+            { text: 'Naomi Campbell', correct: false},
+            { text: 'Gabrielle Union', correct: false},        
+        ]
+    },
+    {
+        question: 'Who guest-starred as herself, the Victoria\'s secret model who gets locked in an ATM ~vestibule~ with Chandler during a city-wide blackout?',
+        answers: [
+            { text: 'Candice Swanepoel', correct: false},
+            { text: 'Tyra Banks', correct: false},
+            { text: 'Elsa Hosk', correct: false},
+            { text: 'Jill Goodacre', correct: true},        
+        ]
+    },
+    {
+        question: 'Who guest-starred as himself, the action film star that Monica and Rachel fight over?',
+        answers: [
+            { text: 'Liam Neeson', correct: false},
+            { text: 'Denzel Washington', correct: false},
+            { text: 'Jean-Claude Van Damme', correct: true},
+            { text: 'Jason Statham', correct: false},        
         ]
     },
     {
@@ -306,15 +405,6 @@ const quiz = [
         ]
     },
     {
-        question: 'In what part of her body did Monica get a pencil stuck at age 14?',
-        answers: [
-            { text: 'her hand', correct: false},
-            { text: 'her ear', correct: true},
-            { text: 'her foot', correct: false},
-            { text: 'her leg', correct: false},        
-        ]
-    },
-    {
         question: 'What is Joey\'s favorite food?',
         answers: [
             { text: 'meat', correct: false},
@@ -324,7 +414,7 @@ const quiz = [
         ]
     },
     {
-        question: 'Chandler was how old when he first touched a girl’s breast?',
+        question: 'Chandler was how old when he first touched a girl\’s breast?',
         answers: [
             { text: '13', correct: false},
             { text: '15', correct: false},
@@ -354,7 +444,7 @@ const quiz = [
         question: 'What is Chandler Bing\'s job? (Before he begins a new career in advertising)',
         answers: [
             { text: 'accountant', correct: false},
-            { text: 'engineer', correct: true},
+            { text: 'engineer', correct: false},
             { text: 'transponster', correct: false},
             { text: 'statistical analysis and data reconfiguration', correct: true},        
         ]
